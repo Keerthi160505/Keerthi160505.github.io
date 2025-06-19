@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Keerthi Computer Science">
+    <meta name="description" content="This is a profile page of Keerthi.">
+    <meta name="author" content="Rajesh">
+    <!-- <meta http-equiv="refresh" content="10" url="http://localhost:8080/profile"> -->
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],input[type="email"],input[type="datetime-local"],input[type="url"]{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: #5a5abc;
+            color: white;
+            border-color: #5a5abc;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #0000be;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+        }
+
+        textarea{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Keerthi Profile</h1>
+    </header>
+    <main>
+        <!-- Personal Information -->
+        <section>
+            <h2>Personal Information</h2>
+            <img src="./assets/images/student.webp" width="300px" >
+            <p><strong>Name : </strong>Keerthi</p>
+            <p><strong>Branch : </strong>B.Tech Computer Science and Engineering</p>
+            <p><strong>College : </strong>Malla Reddy University, Hyderabad</p>
+            <p><strong>Year : </strong>3rd Year</p>
+        </section>
+        <!-- Academic Performance -->
+        <section>
+            <h2>Academic Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Subjects</th>
+                        <th>SGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st</td>
+                        <td>Maths, Full Stack, Python Programming</td>
+                        <td>9.18</td>
+                    </tr>
+
+                    <tr>
+                        <td>2nd</td>
+                        <td>Physics, BEEE, Java Programming</td>
+                        <td>9.47</td>
+                    </tr>
+
+                    <tr>
+                        <td>3rd</td>
+                        <td>DSA, DBMS , DM</td>
+                        <td>9.16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Technical Skills -->
+         <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Operating System: </strong>Windows</li>
+                <li><strong>Language: </strong>C, C++, Python, Java</li>
+                <li><strong>Front End: </strong>HTML, CSS</li>
+                <li><strong>Front End Framework: </strong>React</li>
+                <li><strong>Server Framework: </strong>SpringBoot, NodeJS</li>
+                <li><strong>DBMS: </strong>MySQL, MongoDb</li>
+            </ul>
+         </section>
+         <!-- Hobbies & Interests -->
+          <section>
+            <h2>Hobbies & Interests</h2>
+            <ol>
+                <li>Coding Challenges(Leetcode)</li>
+                <li>UI Design</li>
+                <li>Watching Series</li>
+                <li>Tennis and Drawing</li>
+            </ol>
+          </section>
+          <!-- Contact Me -->
+           <section>
+            <h2>Contact Me</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="">When to call back:</label>
+                    <input type="datetime-local" name="date" id="date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Contact number:</label>
+                    <input type="text" name="Contact" id="Contact">
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <textarea name="description" id="description" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="">GitHub Profile</label>
+                    <input type="url" name="gitHub" id="gitHub">
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+           </section>
+    </main>
 </body>
 </html>
